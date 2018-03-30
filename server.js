@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
     res.sendFile('views/index.html' , { root : __dirname});
 });
 
-app.get('/api/manatees', controllers.manatees.index);
+app.get('/api/manatees', controller.manatees.index);
 
 // app.get('/api/artists', controllers.artists.index);
 
