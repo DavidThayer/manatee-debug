@@ -1,5 +1,7 @@
 # Manatee Mania
 
+![manatee gif](https://media2.giphy.com/media/rlkpAmX3gaLWE/giphy.gif)
+
 Debugging a CRUD app with Node, Express, MongoDB, and Mongoose.
 
 
