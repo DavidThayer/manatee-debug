@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/tunely-debug");
+mongoose.connect("mongodb://localhost/manatees-debug");
 
 var ManateeModel = require('./manatee.js');
 

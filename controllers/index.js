@@ -3,6 +3,6 @@ var manateesController = require('./manatees.js');
 
 module.exports = {
     api: apiController,
-    manatee: manateesController,
+    manatees: manateesController,
     // artists: artistsController
 }
