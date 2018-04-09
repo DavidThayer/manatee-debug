@@ -1,13 +1,13 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var AlbumSchema = new Schema({
-  manateeName: String,
+var ManateeSchema = new Schema({
+  name: String,
   age: Number,
   releaseDate: String,
   image: String
 });
 
-var Album = mongoose.model('Album', AlbumSchema);
+var Manatee = mongoose.model('Manatee', ManateeSchema);
 
-module.exports = Album;
+module.exports = Manatee;

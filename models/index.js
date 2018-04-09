@@ -1,10 +1,10 @@
-var mongoose = require("mongoose");
+var mongoose = require('mongoose');
 mongoose.connect("mongodb://localhost/tunely-debug");
 
-var ManateeModel = require('./manatee.js');
+var Manatee = require('./manatee');
 
 module.exports = {
-    Manatee: ManateeModel
+    Manatee: Manatee
 }
 
 // OR

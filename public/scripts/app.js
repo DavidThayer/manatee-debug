@@ -2,18 +2,24 @@ $(document).ready(function() {
   console.log('app.js loaded!');
   $.ajax({
     method: 'GET',
-    url: '/api/manateez',
-    success: function(allManatees) {
+    url: '/api/manatees',
+    success: function(allManateesFromServer) {
+      // debugger;
       allManateesFromServer.forEach(function(eachManatee) {
+
         renderManatee(eachManatee);
       });
-    }
+    },
+    error: handleError
   });
 });
+function handleError(err){
+  console.log(err);
+}
 
 // this function takes a single manatee and renders it to the page
-function renderPerson(manatee) {
-  $('#albums').append(
+function renderManatee(manatee) {
+  $('#manatees').append(
     `<!-- one manatee -->
       <div class="row manatee">
 
@@ -22,7 +28,7 @@ function renderPerson(manatee) {
             <!-- begin manatee internal row -->
               <div class='row'>
                 <div class="col-md-3 col-xs-12 thumbnail manatee-art">
-                  <img src="${ manatee.img }" alt="manatee image">
+                  <img src="${ manatee.image }" alt="manatee image">
                 </div>
 
                 <div class="col-md-9 col-xs-12">
